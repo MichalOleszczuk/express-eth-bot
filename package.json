@@ -1,0 +1,26 @@
+{
+  "name": "express-eth-bot",
+  "version": "0.0.1",
+  "description": "My express eth bot",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "lint-fix": "eslint --ext .jsx --ext .js --fix ./",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Nodejs",
+    "Express",
+    "eth",
+    "bot",
+    "backend"
+  ],
+  "author": "Michał Oleszczuk",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "joi": "^17.2.1",
+    "node-fetch": "^2.6.1"
+  }
+}
