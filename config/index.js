@@ -10,6 +10,7 @@ const envVarsSchema = joi
     LOGS_PATH: joi.string().default(path.resolve(__dirname, '../logs')),
     LOGS_INTERVAL: joi.string().default('1d'),
     LOGS_SIZE: joi.string().default('10M'),
+    SQLITE_DB_PATH: joi.string().default(path.join(__dirname, '../db/test.db')),
   })
   .unknown()
   .required();

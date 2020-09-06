@@ -12,7 +12,8 @@ class App extends views.ModelViewSet {
           Precision: 'P0',
         };
         const url = `https://api.stg.deversifi.com/bfx/v2/book/${params.Symbol}/${params.Precision}`;
-        const response = await ApiService.get(url, params);
+        const urlMock = `https://api.deversifi.com/bfx/v2/book/tETHUSD/R0`;
+        const response = await ApiService.get(urlMock, params);
         responses.sendOk(req, res, { response });
       });
     });
