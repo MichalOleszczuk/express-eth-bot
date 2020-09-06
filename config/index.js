@@ -9,6 +9,7 @@ const envVarsSchema = joi
     EXPRESS_PORT: joi.number().default(3000),
     LOGS_PATH: joi.string().default(path.resolve(__dirname, '../logs')),
     LOGS_INTERVAL: joi.string().default('1d'),
+    LOGS_SIZE: joi.string().default('10M'),
   })
   .unknown()
   .required();
